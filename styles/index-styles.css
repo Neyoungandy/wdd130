@@ -1,28 +1,61 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Float Profile Image */
+main img {
+  float: right;
+}
+
+/* Overlay Heading on Image */
+aside {
+  position: relative;
+}
+
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+
+/* Adjustments to existing styles */
+
+/* Update main max-width */
 main {
-    max-width: 840px;
-  }
-  
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eeeeee;
-    color: #333;
-    text-align: center;
-  }
-  
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
-  p {
-    padding: 0;
-  }
-  
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
+  max-width: 840px;
+}
+
+/* Update aside width, margin, and border */
+aside {
+  width: 20rem; /* Adjusted width */
+  margin: 1rem; /* Adjusted margin */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Adjusted border */
+  padding: 1rem; /* Kept padding */
+  background-color: #eeeeee; /* Kept background-color */
+  color: #333; /* Kept color */
+  text-align: center; /* Kept text-align */
+}
+
+/* Remove paragraph padding */
+p {
+  padding: 0;
+}
+
+/* Adjust footer margin-top */
+footer {
+  margin-top: 15px; /* Kept margin-top */
+  border-top: 1px solid #000; /* Kept border-top */
+  text-align: center; /* Kept text-align */
+}
