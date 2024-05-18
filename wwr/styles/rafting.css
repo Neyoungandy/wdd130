@@ -3,8 +3,8 @@
 
 /* Define CSS variables based on color scheme */
 :root {
-  --primary-color: #FFECD1;
-  --secondary-color: #78290F;
+  --primary-color: #fc0f0f;
+  --secondary-color: #1c984a;
   --accent1-color: #FF7D00;
   --accent2-color: #001524;
 }
@@ -21,10 +21,6 @@ h1, h2, h3, p {
 
 h1 {
   font-size: 2.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 h2 {
@@ -78,3 +74,55 @@ body {
   margin-left: 20px;
 }
 
+/* Header Styles */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* History Section Styles */
+#history {
+  /* Add styles as needed */
+}
+
+/* Adventures Section Styles */
+#adventures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#adventures .adventure-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#adventures figure {
+  flex: 0 0 20%;
+}
+
+#adventures img {
+  width: 100%;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sociallinks {
+  display: flex;
+}
+
+.sociallinks a {
+  margin-left: 10px;
+}
