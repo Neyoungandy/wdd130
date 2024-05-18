@@ -20,18 +20,21 @@ main img {
 }
 
 /* Nav */
-
 nav {
-padding-bottom: 30px;
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-a {
-  
-  margin-right: 30px;
-}
-
-ul {
-  padding-top: 20px;
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; /* shorthand for white */
 }
 
 /* Overlay Heading on Image */
@@ -42,14 +45,14 @@ aside {
 aside h2 {
   position: absolute;
   top: 47px;
-  left: 150px;
+  left: 100px;
 }
 
 /* Adjustments to existing styles */
 
 /* Update main max-width */
 main {
-  max-width: 840px;
+  margin: 1rem;
 }
 
 /* Update aside width, margin, and border */
@@ -73,4 +76,33 @@ footer {
   margin-top: 15px; /* Kept margin-top */
   border-top: 1px solid #000; /* Kept border-top */
   text-align: center; /* Kept text-align */
+}
+
+/* Header, Grid, and Footer Styles */
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Grid Container */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+main {
+  margin: 0; /* Reset margin since it will be controlled by grid */
+}
+
+aside {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+/* H1 Bottom Border */
+h1 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.5rem;
 }
