@@ -105,4 +105,11 @@ aside {
 h1 {
   border-bottom: 2px solid #000;
   padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Adding margin to the ul elements*/
+ul {
+  padding-top : 1px;
+  margin-top: 1rem; /*Add this line */
 }
